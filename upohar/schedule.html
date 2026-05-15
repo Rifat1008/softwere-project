@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule a Gift - Upohar</title>
+    <link rel="stylesheet" href="schedule.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="schedule-container">
+        <div class="schedule-card">
+            <div class="header">
+                <h2>Schedule Your Gift</h2>
+                <p>Set a reminder and we'll notify you!</p>
+            </div>
+
+            <div class="product-preview">
+                <img src="gift-box.png" alt="Selected Gift" id="selectedGiftImg">
+                <div class="product-info">
+                    <h4 id="productName">Premium Surprise Box</h4>
+                    <p id="productPrice">1200 BDT</p>
+                </div>
+            </div>
+
+            <hr class="divider">
+
+            <div class="form-group">
+                <label>Select Date & Time</label>
+                <input type="datetime-local" id="scheduleTime" class="time-input">
+            </div>
+
+            <div class="notification-switch">
+                <div class="switch-text">
+                    <span>Enable Notifications</span>
+                    <p>Receive alert when it's time to gift.</p>
+                </div>
+                <label class="toggle">
+                    <input type="checkbox" id="notifyToggle" checked>
+                    <span class="slider"></span>
+                </label>
+            </div>
+
+            <button class="confirm-btn" id="confirmBtn">Confirm Schedule</button>
+
+            <div id="statusMessage" class="status-msg"></div>
+        </div>
+    </div>
+
+    <script src="schedule.js"></script>
+</body>
+</html>
