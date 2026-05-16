@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart Gift Finder - Upohar</title>
+    <link rel="stylesheet" href="filter.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="filter-container">
+        <div class="header">
+            <h2>Find the Perfect Upohar</h2>
+            <p>Select categories to filter through our unique 100 gift collection!</p>
+        </div>
+
+        <div class="filter-panel">
+            <div class="filter-group">
+                <label>Gender</label>
+                <select id="filterGender">
+                    <option value="all">All Genders</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Age Group</label>
+                <select id="filterAge">
+                    <option value="all">All Ages</option>
+                    <option value="teen">Teen</option>
+                    <option value="adult">Adult</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Occasion</label>
+                <select id="filterOccasion">
+                    <option value="all">All Occasions</option>
+                    <option value="wedding">Wedding</option>
+                    <option value="birthday">Birthday</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Hobby</label>
+                <select id="filterHobby">
+                    <option value="all">All Hobbies</option>
+                    <option value="gardening">Gardening</option>
+                    <option value="tech">Tech</option>
+                </select>
+            </div>
+
+            <div class="filter-group">
+                <label>Profession</label>
+                <select id="filterProfession">
+                    <option value="all">All Professions</option>
+                    <option value="student">Student</option>
+                    <option value="engineer">Engineer</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="gifts-grid" id="giftsGrid">
+            </div>
+    </div>
+
+    <script src="filter.js"></script>
+</body>
+</html>
